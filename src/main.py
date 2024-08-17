@@ -31,7 +31,7 @@ async def lifespan(app: FastAPI):
 # FastAPI initialize
 app = FastAPI(
     lifespan=lifespan,
-    title='PriscillaFX',
+    title='C-Bank',
     redoc_url=None,
 )
 
@@ -40,10 +40,10 @@ app.mount('/static', StaticFiles(directory='static'), name='static')
 
 
 # Files
-# # App Favicon
-# @app.get('/favicon.ico', include_in_schema=False)
-# async def favicon() -> FileResponse:
-#     return FileResponse('static/icons/favicon.ico')
+# App Favicon
+@app.get('/favicon.ico', include_in_schema=False)
+async def favicon() -> FileResponse:
+    return FileResponse('static/icons/favicon.ico')
 
 
 # Routers
@@ -52,7 +52,7 @@ app.include_router(router_pages)
 
 # CORS
 app.add_middleware(
-    CORSMiddleware,
+    CORSMiddleware, 
     allow_origins=[
         'http://localhost',
     ],

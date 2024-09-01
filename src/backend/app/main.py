@@ -1,8 +1,3 @@
-
-"""This code is licensed under the GPL-3.0 license
-Written by masajinobe-ef
-"""
-
 from contextlib import asynccontextmanager
 
 # FastAPI
@@ -13,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 
 
 # Loguru
-from logger import logger
+from backend.app.logger import logger
 
 
 # Routers depends

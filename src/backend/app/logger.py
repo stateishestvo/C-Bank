@@ -9,7 +9,7 @@ def get_current_date():
 
 
 logger.add(
-    f'logs/{get_current_date()}_priscillafx.log',
+    f'logs/{get_current_date()}_C-Bask.log',
     rotation='00:00',
     retention='1 day',
     level='ERROR',
@@ -17,7 +17,7 @@ logger.add(
 )
 
 logger.add(
-    f'logs/{get_current_date()}_priscillafx.log',
+    f'logs/{get_current_date()}_C-Bask.log',
     rotation='00:00',
     retention='1 day',
     level='INFO',
@@ -25,7 +25,7 @@ logger.add(
 )
 
 logger.add(
-    f'logs/{get_current_date()}_priscillafx.log',
+    f'logs/{get_current_date()}_C-Bask.log',
     rotation='00:00',
     retention='1 day',
     level='WARNING',

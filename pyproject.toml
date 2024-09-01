@@ -4,9 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["Stateishestvo"]
 readme = "README.md"
+packages = [{ include = "*", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+python-dotenv = "^1.0.1"
+fastapi = {extras = ["standard"], version = "^0.112.1"}
+loguru = "^0.7.2"
+pypdf2 = "^3.0.1"
+sqlmodel = "^0.0.22"
 
 
 [build-system]
